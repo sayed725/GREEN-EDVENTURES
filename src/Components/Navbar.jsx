@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-100 mb-[50px]">
+        <div className="navbar bg-base-100 py-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,7 +64,7 @@ const Navbar = () => {
 
           {
             user && user?.email ? 
-            <button onClick={logOut} className="btn btn-neutral rounded-none">Log-out</button>  
+            <button onClick={logOut} className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85]">Log-out</button>  
                : <Link to='/auth/login'  className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85]">Login</Link>
           }
          
