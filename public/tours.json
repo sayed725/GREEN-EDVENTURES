@@ -1,0 +1,172 @@
+[
+    {
+      "AdventureTitle": "Sundarbans Mangrove Safari",
+      "Image": "https://i.ibb.co.com/n68br8M/sundarban-mangrove-forest-beauty-mystery-dangers.jpg",
+      "ID": 1,
+      "CategoryName": "Mangrove Forest Adventure",
+      "ShortDescription": "Explore the largest mangrove forest in the world, home to the Bengal Tiger and diverse wildlife.",
+      "AdventureCost": 9999,
+      "BookingAvailability": "Available Year-round",
+      "Location": "Sundarbans, Khulna Division",
+      "Duration": "3 Days, 2 Nights",
+      "AdventureLevel": "Moderate",
+      "IncludedItems": [
+        "Boat ride",
+        "Guided tour",
+        "Meals (local cuisine)",
+        "Wildlife observation gear"
+      ],
+      "EcoFriendlyFeatures": [
+        "Solar-powered boats",
+        "Waste management system",
+        "Locally sourced meals"
+      ],
+      "MaxGroupSize": 12,
+      "SpecialInstructions": [
+        "Carry mosquito repellent",
+        "Wear lightweight, long-sleeved clothing",
+        "Avoid loud noises to protect wildlife"
+      ]
+    },
+    {
+      "AdventureTitle": "Ratargul Swamp Forest Kayaking",
+      "Image": "https://i.ibb.co.com/CKGk8QT/Ratargul-2.jpg",
+      "ID": 2,
+      "CategoryName": "Swamp Forest Adventure",
+      "ShortDescription": "Paddle through the serene Ratargul Swamp Forest, known as the Amazon of Bangladesh.",
+      "AdventureCost": 2999,
+      "BookingAvailability": "June to October",
+      "Location": "Ratargul, Sylhet Division",
+      "Duration": "1 Day",
+      "AdventureLevel": "Easy",
+      "IncludedItems": [
+        "Kayak and safety gear",
+        "Local guide",
+        "Snack pack"
+      ],
+      "EcoFriendlyFeatures": [
+        "Eco-friendly kayaks",
+        "No plastic usage policy",
+        "Supporting local guides"
+      ],
+      "MaxGroupSize": 8,
+      "SpecialInstructions": [
+        "Bring waterproof clothing",
+        "Avoid littering in the water",
+        "Respect local flora and fauna"
+      ]
+    },
+    {
+      "AdventureTitle": "Lawachara Rainforest Trek",
+      "Image": "https://i.ibb.co.com/M7WnfVV/lawachhara.jpg",
+      "ID": 3,
+      "CategoryName": "Rainforest Trekking",
+      "ShortDescription": "Hike through Lawachara National Park and discover rare flora and fauna.",
+      "AdventureCost": 1999,
+      "BookingAvailability": "October to March",
+      "Location": "Lawachara, Moulvibazar",
+      "Duration": "1 Day",
+      "AdventureLevel": "Moderate",
+      "IncludedItems": [
+        "Professional trekking guide",
+        "Packed lunch",
+        "First-aid kit"
+      ],
+      "EcoFriendlyFeatures": [
+        "Trail conservation",
+        "Reusable meal containers",
+        "Guided eco-education"
+      ],
+      "MaxGroupSize": 15,
+      "SpecialInstructions": [
+        "Wear comfortable hiking shoes",
+        "Carry sufficient water",
+        "Follow park guidelines strictly"
+      ]
+    },
+    {
+      "AdventureTitle": "Nijhum Dwip Wildlife Watch",
+      "Image": "https://i.ibb.co.com/ByStgvb/5240854108-afc89c20ce.jpg",
+      "ID": 4,
+      "CategoryName": "Wildlife Adventure",
+      "ShortDescription": "Experience the tranquility of Nijhum Dwip and its rich biodiversity.",
+      "AdventureCost": 3499,
+      "BookingAvailability": "November to February",
+      "Location": "Nijhum Dwip, Noakhali",
+      "Duration": "2 Days, 1 Night",
+      "AdventureLevel": "Easy",
+      "IncludedItems": [
+        "Ferry transport",
+        "Wildlife observation gear",
+        "Overnight accommodation"
+      ],
+      "EcoFriendlyFeatures": [
+        "Energy-efficient accommodations",
+        "Community-driven tourism",
+        "Plastic-free zones"
+      ],
+      "MaxGroupSize": 10,
+      "SpecialInstructions": [
+        "Bring binoculars for birdwatching",
+        "Pack eco-friendly toiletries",
+        "Respect local wildlife habitats"
+      ]
+    },
+    {
+      "AdventureTitle": "Rema-Kalenga Forest Expedition",
+      "Image": "https://i.ibb.co.com/Pww7CZ4/Rema-Kalenga-Forest-Expedition.jpg",
+      "ID": 5,
+      "CategoryName": "Forest Expedition",
+      "ShortDescription": "Venture into Rema-Kalenga Wildlife Sanctuary for a close encounter with nature.",
+      "AdventureCost": 7999,
+      "BookingAvailability": "September to April",
+      "Location": "Chunarughat, Habiganj",
+      "Duration": "2 Days, 1 Night",
+      "AdventureLevel": "Challenging",
+      "IncludedItems": [
+        "Professional guide",
+        "Tent accommodation",
+        "Campfire dinner"
+      ],
+      "EcoFriendlyFeatures": [
+        "No single-use plastics",
+        "Locally grown food",
+        "Promotes conservation awareness"
+      ],
+      "MaxGroupSize": 8,
+      "SpecialInstructions": [
+        "Pack lightweight camping gear",
+        "Follow guide instructions strictly",
+        "Keep noise levels to a minimum"
+      ]
+    },
+    {
+      "AdventureTitle": "Modhupur Jungle Cycling Tour",
+      "Image": "https://i.ibb.co.com/qjSBK55/Modhupur-Jungle-Cycling-Tour.jpg",
+      "ID": 6,
+      "CategoryName": "Cycling Adventure",
+      "ShortDescription": "Cycle through the lush green trails of Modhupur Jungle, soaking in its natural beauty.",
+      "AdventureCost": 1499,
+      "BookingAvailability": "Year-round",
+      "Location": "Modhupur, Tangail",
+      "Duration": "Half Day",
+      "AdventureLevel": "Moderate",
+      "IncludedItems": [
+        "Mountain bike rental",
+        "Helmet and safety gear",
+        "Local snacks"
+      ],
+      "EcoFriendlyFeatures": [
+        "Zero-emission activity",
+        "Reusable snack containers",
+        "Local community engagement"
+      ],
+      "MaxGroupSize": 12,
+      "SpecialInstructions": [
+        "Wear cycling-friendly attire",
+        "Carry a small backpack",
+        "Stay hydrated during the ride"
+      ]
+    }
+  ]
+  
