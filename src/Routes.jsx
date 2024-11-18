@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import AuthLayout from "./layouts/AuthLayout";
 import Login from "./Pages/LogIn";
 import Blog from "./Pages/Blog";
+import Details from "./Pages/Details";
 
 const routes = createBrowserRouter([
     {
@@ -40,6 +41,11 @@ const routes = createBrowserRouter([
         path: "/blog",
         element: <Blog></Blog>,
        },
+       {
+        path: "/details",
+        element: <Details></Details>,
+       },
+
        {
         path:'*',
         element: <h1 className='text-5xl text-center'>Error</h1>
