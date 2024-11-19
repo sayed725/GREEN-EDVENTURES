@@ -12,12 +12,13 @@ import Details from "./Pages/Details";
 import ShowCard from "./Components/ShowCard";
 import UserProfile from "./Pages/UserProfile";
 import UpdateProfile from "./Pages/UpdateProfile";
+import Error from "./Pages/Error";
 
 const routes = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
-      errorElement: <h1 className='text-5xl text-center'>Error</h1>,
+      errorElement: <Error></Error>,
       children:[
        {
         path: "/",

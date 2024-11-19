@@ -13,7 +13,7 @@ const Navbar = () => {
      <li><NavLink to='/about'>About Us</NavLink></li>
      <li><NavLink to='/blog'>Blog</NavLink></li>
 
-     <li><NavLink to='/userprofile'>UserProfile</NavLink></li>
+     <li><NavLink to='/userprofile'>My Profile</NavLink></li>
      <li><NavLink to='/updateprofile'>UpdateProfile</NavLink></li>
 
     </>
@@ -76,7 +76,7 @@ const Navbar = () => {
       />
      
       <div className="absolute top-0 right-[60px] bg-black text-white text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 group-hover:opacity-100 z-50 transition-opacity duration-200">
-        {user.displayName}
+        {user?.displayName}
       </div>
     </div>
 
