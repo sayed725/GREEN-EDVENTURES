@@ -9,15 +9,24 @@ import AuthLayout from "./layouts/AuthLayout";
 import Login from "./Pages/LogIn";
 import Blog from "./Pages/Blog";
 import Details from "./Pages/Details";
+import ShowCard from "./Components/ShowCard";
 
 const routes = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement: <h1 className='text-5xl text-center'>Error</h1>,
       children:[
        {
         path: "/",
         element: <Home></Home>,
+        children:[
+          {
+            path:"/",
+            element:<ShowCard></ShowCard>,
+            loader: ()=> fetch ('/tours.json'),
+          }
+        ]
        },
        {
         path:'auth',
@@ -42,14 +51,15 @@ const routes = createBrowserRouter([
         element: <Blog></Blog>,
        },
        {
-        path: "/details",
+        path: "/details/:id",
         element: <Details></Details>,
+        loader: ()=> fetch ('/tours.json'),
        },
 
-       {
-        path:'*',
-        element: <h1 className='text-5xl text-center'>Error</h1>
-      }
+      //  {
+      //   path:'*',
+      //   element: <h1 className='text-5xl text-center'>Error</h1>
+      // }
       ]
     },
   ]);

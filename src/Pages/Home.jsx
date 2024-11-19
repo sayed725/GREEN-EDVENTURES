@@ -3,6 +3,9 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import Banner from '../Components/Banner';
 import Feature from '../Components/Feature';
+import ShowCard from '../Components/ShowCard';
+import { Outlet } from 'react-router-dom';
+import Question from '../Components/Question';
 
 const Home = () => {
     return (
@@ -15,6 +18,12 @@ const Home = () => {
          <Banner></Banner>
          <div className='py-[50px] border-2 border-red-700'>
          <Feature></Feature>
+         </div>
+         <div className='py-[50px] border-2 border-red-700'>
+           <Outlet></Outlet>
+         </div>
+         <div className='py-[50px] border-2 border-red-700'>
+            <Question></Question>
          </div>
          </div>
           </main>

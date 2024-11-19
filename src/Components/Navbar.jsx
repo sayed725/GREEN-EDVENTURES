@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const links = <>
      <li><NavLink to='/'>Home</NavLink></li>
-     <li><NavLink to='/details'>Destination Details</NavLink></li>
+    
      
      <li><NavLink to='/about'>About Us</NavLink></li>
      <li><NavLink to='/blog'>Blog</NavLink></li>
@@ -66,8 +66,8 @@ const Navbar = () => {
 
           {
             user && user?.email ? 
-            <button onClick={logOut} className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85]">Log-out</button>  
-               : <Link to='/auth/login'  className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85]">Login</Link>
+            <button onClick={logOut} className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Log-out</button>  
+               : <Link to='/auth/login'  className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Login</Link>
           }
          
         </div>
