@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="navbar-end">
         <div className="login flex gap-2 items-center">
           <div className=" ">
-          {user && user?.email ? (
+          {user && user?.email && user?.photoURL ? (
             // <div className="flex gap-2 relative">
             //   <img className="w-[60px] rounded-full" src={user?.photoURL} alt="" />
 
@@ -75,7 +75,7 @@ const Navbar = () => {
         className="w-[50px] h-[50px] rounded-full border-2 border-green-600 cursor-pointer"
       />
      
-      <div className="absolute bottom-0 right-[60px] bg-black text-white text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      <div className="absolute top-0 right-[60px] bg-black text-white text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 group-hover:opacity-100 z-50 transition-opacity duration-200">
         {user.displayName}
       </div>
     </div>

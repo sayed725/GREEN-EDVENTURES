@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEye, FaEyeSlash , FaGoogle} from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 
@@ -9,8 +10,8 @@ const Register = () => {
 
     const navigate = useNavigate()
 
-    const { createNewUser, setUser , updateUserProfile } = useContext(AuthContext)
-    const [error , setError] = useState({})
+    const { createNewUser, setUser , updateUserProfile ,  signInWithGoogle } = useContext(AuthContext)
+    const [error , setError] = useState('')
     const [showPassword , setShowPassword] = useState(false)
 
 
@@ -26,15 +27,20 @@ const Register = () => {
         const form = new FormData(e.target)
 
         const name = form.get("name")
-        if(name.length < 5){
-            setError({...error, name:'Must be 5 character or more'})
-            return;
-        }
-
 
         const photo = form.get("photo")
         const email = form.get("email")
-        const password = form.get("password")   
+        const password = form.get("password")
+        if (password.length < 6) {
+            setError('Password must be 6 character or more')
+            return;
+        } 
+       
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).*$/;
+        if (!passwordRegex.test(password)) {
+            setError('At least one uppercase, one lowercase character');
+            return;
+        }  
 
         createNewUser(email,password)
         .then(result =>{
@@ -44,18 +50,30 @@ const Register = () => {
             .then(()=>{
                 navigate('/')
             })
-            .catch(err=>{
-                console.log(err)
+            .catch(error=>{
+                setError(error.code)  
             })
-
+            toast.success(`Congratulation! Registration Successful`)
         })
         .catch((error) => {
             const errorCode = error.code;
-            const errorMessage = error.message
-            console.log(errorCode,errorMessage)
+            setError(errorCode)  
+        }) 
+    }
+
+    const handleGoogleSignIn=()=>{
+        signInWithGoogle()
+        .then(result => {
+            const user = result.user
+            setUser(user)
+            
+            toast.success(`Congratulation! ${user.displayName} Login Successful`)
+            navigate(location?.state ? location.state : "/");
         })
+        .catch((err) => {
+            setError({ ...error, Login:err.code})
           
-       
+          });
     }
 
     return (
@@ -69,11 +87,6 @@ const Register = () => {
                         </label>
                         <input type="text" required name="name" placeholder="Name" className="input input-bordered" />
                     </div>
-                    {
-                        error && ( <label className="label text-sm text-red-600">
-                           {error.name}
-                        </label>)
-                    }
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-green-600">Photo URL</span>
@@ -100,10 +113,27 @@ const Register = () => {
                         }
                     </span> 
                     </div>
+                    {
+                        error && ( <label className="label text-sm text-red-600">
+                           {error}
+                        </label>)
+                    }
                     <div className="form-control mt-6">
                         <button className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Register</button>
                     </div>
                 </form>
+
+                <div className='md:w-3/4 lg:w-1/3 mx-auto mt-5'>
+               <button onClick={handleGoogleSignIn}
+                className="w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">
+                    <FaGoogle></FaGoogle>
+                    Log In with Google
+                </button>
+               </div>
+
+
+
+
                 <p className="text-center mt-4 textarea-sm">Already have an account <Link className="text-green-600 font-bold" to="/auth/login">Login</Link></p>
             </div>
         </div>

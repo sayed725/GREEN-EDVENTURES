@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEye, FaEyeSlash , FaGoogle } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
+
 
 const Login = () => {
 
-    const { userLogIn , setUser } = useContext(AuthContext)
+    const { userLogIn , setUser, user , signInWithGoogle } = useContext(AuthContext)
     const [error , setError] = useState({})
     const [showPassword , setShowPassword] = useState(false)
 
@@ -26,8 +28,27 @@ const Login = () => {
         .then(result=>{
             const user = result.user
             setUser(user)
+            
+            toast.success(`Congratulation! ${user.displayName} Login Successful`)
+           
             navigate(location?.state ? location.state : "/");
 
+        })
+        .catch((err) => {
+            setError({ ...error, Login:err.code})
+            toast.error(`${err.code}`)
+          
+          });
+    }
+
+    const handleGoogleSignIn=()=>{
+        signInWithGoogle()
+        .then(result => {
+            const user = result.user
+            setUser(user)
+            
+            toast.success(`Congratulation! ${user.displayName} Login Successful`)
+            navigate(location?.state ? location.state : "/");
         })
         .catch((err) => {
             setError({ ...error, Login:err.code})
@@ -73,6 +94,19 @@ const Login = () => {
                         <button className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Login</button>
                     </div>
                 </form>
+
+
+               
+               <div className='md:w-3/4 lg:w-1/3 mx-auto mt-5'>
+               <button onClick={handleGoogleSignIn}
+                className="w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">
+                    <FaGoogle></FaGoogle>
+                    Log In with Google
+                </button>
+               </div>
+               
+
+
                 <p className="text-center mt-4 textarea-sm">Do not have an account <Link className="text-green-600 font-bold" to="/auth/register">Register</Link></p>
             </div>
         </div>
