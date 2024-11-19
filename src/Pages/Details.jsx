@@ -9,6 +9,7 @@ import { MdFeaturedPlayList } from "react-icons/md";
 import { MdCategory } from "react-icons/md";
 import { SiLevelsdotfyi } from "react-icons/si";
 import { MdIntegrationInstructions } from "react-icons/md";
+import { GiSchoolBag } from "react-icons/gi";
 
 const Details = () => {
   const [place, setPlace] = useState({});
@@ -85,7 +86,7 @@ const Details = () => {
               <span>{Location}</span>
             </div>
 
-            <div className="border-t-2 border-b-2 border-dashed my-10 py-4 flex justify-between px-2">
+            <div className="border-t-2 border-green-600 border-b-2 border-dashed my-10 py-4 flex justify-between px-2">
               <div className=" flex items-center text-gray-600">
                 <FaCalendarAlt className="mr-2 text-green-600 text-xl" />
                 <span>{BookingAvailability}</span>
@@ -164,10 +165,14 @@ const Details = () => {
               </div>
              </div>
 
-             <div className="flex items-center text-gray-600 text-xl">
-                <span>Packing List : All participants must bring quality outdoor clothing on this expedition for their comfort and safety to be prepared for all types of weather. </span>
-              </div>
 
+              <div className="flex items-center text-gray-600 text-xl font-semibold">
+                < GiSchoolBag className="mr-2 text-green-600" />
+                <span>Packing List: </span>
+              </div>
+              
+              <span>All participants must bring quality outdoor clothing on this expedition for their comfort and safety to be prepared for all types of weather. </span>
+  
 
 
 

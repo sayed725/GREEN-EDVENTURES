@@ -10,10 +10,12 @@ const Navbar = () => {
 
     const links = <>
      <li><NavLink to='/'>Home</NavLink></li>
-    
-     
      <li><NavLink to='/about'>About Us</NavLink></li>
      <li><NavLink to='/blog'>Blog</NavLink></li>
+
+     <li><NavLink to='/userprofile'>UserProfile</NavLink></li>
+     <li><NavLink to='/updateprofile'>UpdateProfile</NavLink></li>
+
     </>
 
 
@@ -51,14 +53,35 @@ const Navbar = () => {
            {links}
           </ul>
         </div>
+
+        
         <div className="navbar-end">
         <div className="login flex gap-2 items-center">
           <div className=" ">
           {user && user?.email ? (
-            <div className="flex gap-2">
-              <img className="w-10 rounded-full" src={user?.photoURL} alt="" />
-              <p>{user.displayName}</p>
-            </div>
+            // <div className="flex gap-2 relative">
+            //   <img className="w-[60px] rounded-full" src={user?.photoURL} alt="" />
+
+            //   <div className="absolute top-2 left-12 text-black text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 hover:opacity-100 transition-opacity duration-200">
+            //   {user.displayName}
+            //   </div>
+            // </div>
+
+            <div className="relative group flex items-center">
+     
+      <img
+        src={user?.photoURL}
+        alt="User Profile"
+        className="w-[50px] h-[50px] rounded-full border-2 border-green-600 cursor-pointer"
+      />
+     
+      <div className="absolute bottom-0 right-[60px] bg-black text-white text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        {user.displayName}
+      </div>
+    </div>
+
+
+
           ) : (
             <img className="w-10" src='' alt="" />
           )}
@@ -66,7 +89,13 @@ const Navbar = () => {
 
           {
             user && user?.email ? 
-            <button onClick={logOut} className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Log-out</button>  
+
+
+           <div>
+             <button onClick={logOut} className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Log-out</button>  
+           </div>
+
+
                : <Link to='/auth/login'  className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Login</Link>
           }
          

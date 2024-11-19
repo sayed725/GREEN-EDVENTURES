@@ -10,6 +10,8 @@ import Login from "./Pages/LogIn";
 import Blog from "./Pages/Blog";
 import Details from "./Pages/Details";
 import ShowCard from "./Components/ShowCard";
+import UserProfile from "./Pages/UserProfile";
+import UpdateProfile from "./Pages/UpdateProfile";
 
 const routes = createBrowserRouter([
     {
@@ -54,6 +56,14 @@ const routes = createBrowserRouter([
         path: "/details/:id",
         element: <Details></Details>,
         loader: ()=> fetch ('/tours.json'),
+       },
+       {
+        path: "/userprofile",
+        element: <UserProfile></UserProfile>,
+       },
+       {
+        path: "/updateprofile",
+        element: <UpdateProfile></UpdateProfile>,
        },
 
       //  {
