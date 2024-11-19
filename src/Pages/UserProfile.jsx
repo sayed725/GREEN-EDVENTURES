@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
 
@@ -40,9 +41,9 @@ const UserProfile = () => {
         </div>
         {/* Update Button */}
         <div className="mt-6 flex justify-center">
-          <button className=" w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">
+          <Link to="/updateprofile" className=" w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">
             Update Profile
-          </button>
+          </Link>
         </div>
       </div>
     </div>
