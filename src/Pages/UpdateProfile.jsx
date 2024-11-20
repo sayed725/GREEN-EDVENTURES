@@ -1,12 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
 
 const UpdateProfile = () => {
+
+    const location = useLocation()
+   
+
+    useEffect(()=>{
+
+        if(location.pathname == "/updateprofile"){
+            document.title = "Update Profile-GreenEdventures"
+        }
+    },[])
 
     const navigate = useNavigate()
 

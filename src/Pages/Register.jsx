@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import { FaEye, FaEyeSlash , FaGoogle} from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
@@ -7,6 +7,15 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 const Register = () => {
+
+    const location = useLocation()
+
+    useEffect(()=>{
+
+        if(location.pathname == "/auth/register"){
+            document.title = "Register-GreenEdventures"
+        }
+    },[])
 
     const navigate = useNavigate()
 

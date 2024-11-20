@@ -21,10 +21,10 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-100 py-5">
+        <div className="navbar bg-[#0f2d3c] py-5 rounded-md">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -40,16 +40,16 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              className="menu menu-sm dropdown-content bg-[#0f2d3c] rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
              {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
-          <img className='h-[50px] w-[150px]' src="/GreenEdventures-Main-Logo.png" alt="" />
+          <a className=" text-xl">
+          <img className='h-[50px] w-[150px] object-cover' src="/GreenEdventures-Main-Logo.png" alt="" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-white">
            {links}
           </ul>
         </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
       <img
         src={user?.photoURL}
         alt="User Profile"
-        className="w-[50px] h-[50px] rounded-full border-2 border-green-600 cursor-pointer"
+        className="w-[50px] h-[50px] rounded-full  cursor-pointer"
       />
      
       <div className="absolute top-0 right-[60px] bg-black text-white text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 group-hover:opacity-100 z-50 transition-opacity duration-200">
@@ -92,11 +92,11 @@ const Navbar = () => {
 
 
            <div>
-             <button onClick={logOut} className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Log-out</button>  
+             <button onClick={logOut} className="btn rounded-md border-none  text-white  bg-green-600 hover:text-black hover:bg-green-700">Log-out</button>  
            </div>
 
 
-               : <Link to='/auth/login'  className="btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">Login</Link>
+               : <Link to='/auth/login'  className="btn rounded-md border-none  text-white  bg-green-600 hover:text-black hover:bg-green-700">Login</Link>
           }
          
         </div>

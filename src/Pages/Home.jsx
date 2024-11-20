@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import Banner from '../Components/Banner';
 import Feature from '../Components/Feature';
 import ShowCard from '../Components/ShowCard';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Question from '../Components/Question';
 
 const Home = () => {
+
+    const location = useLocation()
+   
+    useEffect(()=>{
+
+        if(location.pathname == "/"){
+            document.title = "Home-GreenEdventures"
+        }
+    },[])
+
+
+
+
     return (
         <div>
           <nav>

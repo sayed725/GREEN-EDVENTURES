@@ -13,6 +13,7 @@ import ShowCard from "./Components/ShowCard";
 import UserProfile from "./Pages/UserProfile";
 import UpdateProfile from "./Pages/UpdateProfile";
 import Error from "./Pages/Error";
+import ForgetPassword from "./Pages/ForgetPassword";
 
 const routes = createBrowserRouter([
     {
@@ -66,6 +67,10 @@ const routes = createBrowserRouter([
         path: "/updateprofile",
         element: <UpdateProfile></UpdateProfile>,
        },
+       {
+        path: "/forgetpassword",
+        element: <ForgetPassword></ForgetPassword>,
+       }
 
       //  {
       //   path:'*',

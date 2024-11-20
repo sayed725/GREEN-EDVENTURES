@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import { FaEye, FaEyeSlash , FaGoogle } from 'react-icons/fa';
@@ -7,7 +7,18 @@ import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
 
-    const { userLogIn , setUser, user , signInWithGoogle } = useContext(AuthContext)
+
+
+  
+
+    useEffect(()=>{
+
+        if(location.pathname == "/auth/login"){
+            document.title = "Login-GreenEdventures"
+        }
+    },[])
+
+    const { userLogIn , setUser, user , signInWithGoogle, setForgetEmail  } = useContext(AuthContext)
     const [error , setError] = useState({})
     const [showPassword , setShowPassword] = useState(false)
 
@@ -22,6 +33,8 @@ const Login = () => {
 
         const email = form.get("email")
         const password = form.get("password")
+
+       
       
 
         userLogIn(email,password)
@@ -65,7 +78,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text text-green-600">Email address</span>
                         </label>
-                        <input type="email" required name="email" placeholder="Email" className="input input-bordered" />
+                        <input type="email" required name="email" placeholder="Email" className="input input-bordered"  onChange={(e) => setForgetEmail(e.target.value)}/>
                     </div>
                     <div className="form-control relative">
                         <label className="label">
@@ -87,7 +100,7 @@ const Login = () => {
                     </span> 
                      
                         <label className="label">
-                            <a href="#" className="label-text-alt link link-hover text-green-600">Forgot password?</a>
+                            < Link to="/forgetpassword" className="label-text-alt link link-hover text-green-600">Forgot password?</Link>
                         </label>
                     </div>
                     <div className="form-control mt-6">

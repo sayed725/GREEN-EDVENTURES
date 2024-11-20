@@ -1,10 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { TypeAnimation } from 'react-type-animation';
 
 const UserProfile = () => {
+
+    const location = useLocation()
+   
+
+    useEffect(()=>{
+
+        if(location.pathname == "/userprofile"){
+            document.title = "My Profile-GreenEdventures"
+        }
+    },[])
 
 
     const { user } = useContext(AuthContext)
@@ -17,10 +28,10 @@ const UserProfile = () => {
 
 
             <div className="flex items-center justify-center bg-gradient-to-b from-[#184E68] to-[#57CA85] py-[100px] rounded-md gap-5">
-      <div className="w-80 bg-white rounded-xl shadow-lg p-6">
+      <div className="bg-white rounded-xl shadow-lg p-6">
        
         <div className="text-center">
-          <div className="text-4xl font-bold text-blue-700 flex justify-center items-center space-x-2">
+          <div className="text-3xl font-bold text-blue-700 flex justify-center items-center space-x-2">
             <span className='text-green-600'>Welcome <br />{user && user.displayName}</span>
           </div>
         </div>
