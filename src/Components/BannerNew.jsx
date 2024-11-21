@@ -22,7 +22,7 @@ const BannerNew = () => {
         {/* Slide 1 */}
         <SwiperSlide>
           <div
-            className="h-[500px] w-full flex flex-col justify-center items-center text-white text-center bg-cover bg-center"
+            className="h-[500px] w-full flex flex-col justify-center items-center text-gray-300 text-center bg-cover bg-center"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/carousel pic1.webp')`,
             }}
@@ -34,16 +34,16 @@ const BannerNew = () => {
               Venture deep into lush, pristine forests, uncovering their secrets
               and beauty while ensuring environmental sustainability.
             </p>
-            <button className="bg-green-700 hover:bg-green-600 hover:text-black text-white font-semibold px-6 py-3 rounded-md">
-              About Us
-            </button>
+            <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">
+              Explore Now
+            </a>
           </div>
         </SwiperSlide>
 
         {/* Slide 2 */}
         <SwiperSlide>
           <div
-            className="h-full w-full flex flex-col justify-center items-center text-white text-center bg-cover bg-center"
+            className="h-full w-full flex flex-col justify-center items-center text-gray-300 text-center bg-cover bg-center"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/carosel pic 3.jpg')`,
             }}
@@ -55,15 +55,15 @@ const BannerNew = () => {
               Immerse yourself in the beauty of untouched nature and connect
               with the wild in the most sustainable way.
             </p>
-            <button className="bg-green-700 hover:bg-green-600 hover:text-black text-white font-semibold px-6 py-3 rounded-md">
+            <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">
               Explore Now
-            </button>
+            </a>
           </div>
         </SwiperSlide>
          {/* Slide 3 */}
         <SwiperSlide>
           <div
-            className="h-full w-full flex flex-col justify-center items-center text-white text-center bg-cover bg-center"
+            className="h-full w-full flex flex-col justify-center items-center text-gray-300 text-center bg-cover bg-center"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/banner type image-2.jpg')`,
             }}
@@ -75,9 +75,9 @@ const BannerNew = () => {
             <p className="text-lg md:text-xl mb-6 hidden sm:block">
             Dive into the vibrant wilderness of lush jungles, teeming with life and secrets, while championing efforts to protect their fragile ecosystems.
             </p>
-            <button className="bg-green-700 hover:bg-green-600 hover:text-black text-white font-semibold px-6 py-3 rounded-md">
+            <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">
               Explore Now
-            </button>
+            </a>
           </div>
         </SwiperSlide> {/* Slide 4 */}
         <SwiperSlide>
@@ -94,9 +94,9 @@ const BannerNew = () => {
             <p className="text-lg md:text-xl mb-6 hidden sm:block">
             Step into ancient forests filled with towering trees, hidden wildlife, and the serene whispers of nature, preserving these wonders for generations to come.
             </p>
-            <button className="bg-green-700 hover:bg-green-600 hover:text-black text-white font-semibold px-6 py-3 rounded-md">
+            <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">
               Explore Now
-            </button>
+            </a>
           </div>
         </SwiperSlide>
       </Swiper>

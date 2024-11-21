@@ -19,11 +19,11 @@ const Footer = () => {
             </li>
             <li className="flex items-center space-x-2">
               <FaMapMarkerAlt className="text-green-600" />
-              <span>Eighth Avenue 487, New York</span>
+              <span>Green-EdVenture, Gulshan 2/10, Dhaka, Bangladesh</span>
             </li>
             <li className="flex items-center space-x-2">
               <FaEnvelope className="text-green-600" />
-              <span>wanderers@qodeinteractive.com</span>
+              <span>ssayed725332@gmail.com</span>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4 text-green-600">Twitter Feed</h3>
           <p className="text-sm">
             For all the latest news and updates,<br /> follow us on Twitter:{" "}
-            <span className="text-green-600">@QodeInteractive</span>
+            <span className="text-green-600">@green-edventure</span>
           </p>
         </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
         
         <p className="text-sm text-white mt-4 opacity-70">
-          © 2018 Qode Interactive, All Rights Reserved
+          © 2018 GREEN-EDVenture, All Rights Reserved
         </p>
       </div>
     </footer>

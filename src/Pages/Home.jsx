@@ -9,6 +9,8 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Popular from '../Components/Popular';
 import TestimonialSection from '../Components/TestimonialSection';
 import BannerNew from '../Components/BannerNew';
+import Question from '../Components/Question';
+import ArticlesTips from '../Components/ArticlesTips';
 
 const Home = () => {
 
@@ -43,6 +45,12 @@ const Home = () => {
          </div>
          <div className='pb-[50px]'>
             <Popular></Popular>
+         </div>
+         <div className='pb-[50px]'>
+          <ArticlesTips></ArticlesTips>
+         </div>
+         <div className='pb-[50px]'>
+          <Question></Question>
          </div>
          </div>
           </main>

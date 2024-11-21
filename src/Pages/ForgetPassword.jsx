@@ -1,18 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast, ToastContainer } from 'react-toastify';
+import { useLocation } from 'react-router-dom';
 
 
 
 const ForgetPassword = () => {
 
+    const location = useLocation()
+
+    useEffect(()=>{
+
+        if(location.pathname == "/forgetpassword"){
+            document.title = "Reset Pass-GreenEdventures"
+        }
+    },[])
+
     const { forgetEmail, setForgetEmail, forgetPassword } = useContext(AuthContext)
 
- // const handleResetPassword = () => {
-    //     window.location.href = 'https://mail.google.com';
-    //   };
+ 
   
 
 

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Card = ({data}) => {
     const { AdventureTitle , Image , EcoFriendlyFeatures , BookingAvailability , Location , AdventureCost , ID } = data
     return (
-        <div className="flex justify-center items-center">
+        <div id='1234' className="flex justify-center items-center">
       <div className="bg-white shadow-md rounded-lg overflow-hidden w-full">
         {/* Image Section */}
         <div className="relative">

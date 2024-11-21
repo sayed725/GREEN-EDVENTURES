@@ -3,6 +3,8 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { useLocation } from 'react-router-dom';
 import Question from '../Components/Question';
+import ContactSection from '../Components/ContactSection';
+import TeamSection from '../Components/TeamSection';
 
 const About = () => {
     const location = useLocation()
@@ -17,8 +19,11 @@ const About = () => {
     return (
         <div>
             <Navbar></Navbar>
+            <div>
+                <TeamSection></TeamSection>
+            </div>
             <div className='my-10'>
-            <Question></Question>
+           <ContactSection></ContactSection>
             </div>
               <Footer></Footer>
         </div>
