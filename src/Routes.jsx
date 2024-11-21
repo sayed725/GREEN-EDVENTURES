@@ -52,10 +52,6 @@ const routes = createBrowserRouter([
         element: <About></About>,
        },
        {
-        path: "/blog",
-        element: <Blog></Blog>,
-       },
-       {
         path: "/details/:id",
         element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: ()=> fetch ('/tours.json'),

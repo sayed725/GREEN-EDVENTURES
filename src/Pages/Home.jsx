@@ -6,6 +6,8 @@ import Feature from '../Components/Feature';
 import ShowCard from '../Components/ShowCard';
 import { Outlet, useLocation } from 'react-router-dom';
 import Question from '../Components/Question';
+import Popular from '../Components/Popular';
+import TestimonialSection from '../Components/TestimonialSection';
 
 const Home = () => {
 
@@ -36,7 +38,10 @@ const Home = () => {
            <Outlet></Outlet>
          </div>
          <div className='py-[50px]'>
-            <Question></Question>
+           <TestimonialSection></TestimonialSection>
+         </div>
+         <div className=''>
+            <Popular></Popular>
          </div>
          </div>
           </main>

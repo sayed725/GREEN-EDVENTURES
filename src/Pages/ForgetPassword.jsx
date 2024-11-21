@@ -6,6 +6,8 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 const ForgetPassword = () => {
 
+    
+
 
     // const [inputValue, setInputValue] = useState(forgetEmail);
 
@@ -17,9 +19,9 @@ const ForgetPassword = () => {
  
   const { forgetEmail, setForgetEmail } = useContext(AuthContext)
 
-  const handleInputChange = (e) => {
-setForgetEmail({ ...forgetEmail, email: e.target.value }); // Update context state
-  };
+//   const handleInputChange = (e) => {
+// setForgetEmail({ ...forgetEmail, email: e.target.value }); // Update context state
+//   };
 
    
 
@@ -49,7 +51,7 @@ setForgetEmail({ ...forgetEmail, email: e.target.value }); // Update context sta
                     <label className="label">
                         <span className="label-text text-green-600">Your Email</span>
                     </label>
-                    <input type="Email" required name="email" placeholder="Email" className="input input-bordered"  value={forgetEmail} onChange={handleInputChange} />
+                    <input type="Email" required name="email" placeholder="Email" className="input input-bordered"  value={forgetEmail}  />
                 </div>
                
                 <div className="form-control mt-6">

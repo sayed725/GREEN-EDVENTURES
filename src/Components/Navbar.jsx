@@ -17,8 +17,7 @@ const Navbar = () => {
             ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/'>Home</NavLink></li>
      <li><NavLink className={({ isActive }) =>
             ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/about'>About Us</NavLink></li>
-     <li><NavLink className={({ isActive }) =>
-            ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/blog'>Blog</NavLink></li>
+    
 
      <li><NavLink className={({ isActive }) =>
             ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/userprofile'>My Profile</NavLink></li>

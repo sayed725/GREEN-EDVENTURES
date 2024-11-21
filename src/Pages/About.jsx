@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { useLocation } from 'react-router-dom';
+import Question from '../Components/Question';
 
 const About = () => {
     const location = useLocation()
@@ -16,8 +17,9 @@ const About = () => {
     return (
         <div>
             <Navbar></Navbar>
-              <h2 className='text-4xl text-center font-bold'>This is About Page</h2>
-              <h2> Live without limits</h2>
+            <div className='my-10'>
+            <Question></Question>
+            </div>
               <Footer></Footer>
         </div>
     );
