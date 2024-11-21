@@ -86,7 +86,7 @@ const Details = () => {
         </div>
       </main>
       {/* information  */}
-      <div className="information grid grid-cols-4 w-10/12 mx-auto py-10 gap-8">
+      <div className="information grid  lg:grid-cols-4 w-10/12 mx-auto py-10 gap-8">
         <div className="info col-span-3">
           <div>
             <h2 className="text-4xl font-bold">{AdventureTitle}</h2>
@@ -191,7 +191,7 @@ const Details = () => {
         </div>
         {/* booking   */}
 
-        <div className="booking col-span-1">
+        <div className="booking col-span-3  lg:col-span-1">
 
 
         <div className="w-full mx-auto bg-white border border-gray-200 shadow-lg rounded-lg p-6">

@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="navbar bg-[#0f2d3c] py-5 rounded-t-md">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white z-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-[#0f2d3c] rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
+              className="menu menu-sm dropdown-content bg-[#0f2d3c] rounded-box z-[50] mt-3 w-52 p-2 shadow text-white">
              {links}
             </ul>
           </div>
