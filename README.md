@@ -9,7 +9,7 @@ Welcome to this project.Discover the thrill of eco-friendly travel with Eco-Edve
 
 - live link:   [https://a8-gadget-heaven-725.netlify.app/) 
 
-- Required PDF Link:   [https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf) 
+- Required PDF Link:   [https://drive.google.com/file/d/1EBQPTljIKRJS_NKkdsO8D9YbkY1FNGEx/view?usp=sharing) 
 
 
 

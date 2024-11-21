@@ -45,8 +45,8 @@ const TestimonialSection = () => {
           modules={[Navigation, Autoplay]}
           loop={true}
           autoplay={{
-            delay: 2000, // Delay between slides in milliseconds
-            disableOnInteraction: false, // Continue autoplay after user interaction
+            delay: 2000, 
+            disableOnInteraction: false, 
           }}
           className="mb-12 lg:w-3/4"
           speed={1000}

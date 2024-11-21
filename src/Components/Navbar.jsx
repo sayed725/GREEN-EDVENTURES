@@ -29,7 +29,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-[#0f2d3c] py-5 rounded-md">
+        <div className="navbar bg-[#0f2d3c] py-5 rounded-t-md">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">

@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import Banner from '../Components/Banner';
+
 import Feature from '../Components/Feature';
-import ShowCard from '../Components/ShowCard';
+
 import { Outlet, useLocation } from 'react-router-dom';
-import Question from '../Components/Question';
+
 import Popular from '../Components/Popular';
 import TestimonialSection from '../Components/TestimonialSection';
+import BannerNew from '../Components/BannerNew';
 
 const Home = () => {
 
@@ -30,7 +31,7 @@ const Home = () => {
           </nav>
           <main>
          <div className='main-section'>
-         <Banner></Banner>
+         <BannerNew></BannerNew>
          <div className='py-5 sm:py-[50px] '>
          <Feature></Feature>
          </div>
@@ -40,7 +41,7 @@ const Home = () => {
          <div className='py-[50px]'>
            <TestimonialSection></TestimonialSection>
          </div>
-         <div className=''>
+         <div className='pb-[50px]'>
             <Popular></Popular>
          </div>
          </div>
