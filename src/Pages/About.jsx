@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { useLocation } from 'react-router-dom';
-import Question from '../Components/Question';
 import ContactSection from '../Components/ContactSection';
 import TeamSection from '../Components/TeamSection';
 

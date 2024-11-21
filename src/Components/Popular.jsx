@@ -12,8 +12,8 @@ const Popular = () => {
     return (
         <div className="bg-white px-5">
        <div className='flex flex-col gap-5'>    
-           <p className='text-sm text-center'>Bangladesh’s best tourist destinations</p>
-           <h2 className='text-4xl text-center font-semibold'>Explore Some Popular Destinations</h2>
+           <p className='text-sm text-center animate__slideInLeft animate__animated'>Bangladesh’s best tourist destinations</p>
+           <h2 className='text-4xl text-center font-semibold animate__slideInRight animate__animated'>Explore Some Popular Destinations</h2>
            </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto mt-10">
         {destinations.map((destination) => (

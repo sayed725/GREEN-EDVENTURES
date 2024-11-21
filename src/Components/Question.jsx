@@ -10,7 +10,7 @@ const Question = () => {
         <div className="flex flex-col">
           {/* Heading Section */}
           <div className="flex flex-col gap-5">
-            <h2 className="text-sm font-semibold tracking-widest text-green-600 uppercase">
+            <h2 className="text-sm font-semibold tracking-widest text-green-600 uppercase animate__slideInLeft animate__animated">
               Premium Travel ✈️
             </h2>
             <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800 mt-2">
@@ -25,7 +25,7 @@ const Question = () => {
             <div className="flex flex-col md:flex-row items-start gap-4 md:items-center">
               {/* Icon */}
               <div className="flex-shrink-0">
-                <FaPhoneAlt className="text-4xl text-green-600" />
+                <FaPhoneAlt className="text-4xl text-green-600 animate__animated animate__bounce" />
               </div>
 
               {/* Content */}
@@ -45,7 +45,7 @@ const Question = () => {
             <div className="flex flex-col md:flex-row gap-4 md:items-center">
               {/* Icon */}
               <div className="flex-shrink-0">
-                <MdOutlineTravelExplore className="text-4xl text-green-600" />
+                <MdOutlineTravelExplore className="text-4xl text-green-600 animate__animated animate__bounce" />
               </div>
 
               {/* Content */}
@@ -65,7 +65,7 @@ const Question = () => {
             <div className="flex flex-col md:flex-row items-start gap-4 md:items-center">
               {/* Icon */}
               <div className="flex-shrink-0">
-                <SiAzuredataexplorer className="text-4xl text-green-600" />
+                <SiAzuredataexplorer className="text-4xl text-green-600 animate__animated animate__bounce" />
               </div>
 
               {/* Content */}
@@ -87,7 +87,7 @@ const Question = () => {
           <div className=" w-full px-6 flex flex-col gap-10">
             <h1 className="text-3xl font-bold mb-4">
               <span className="flex items-center gap-2">
-                Speak With Us <FaPaperPlane className="text-green-600" />
+                Speak With Us <FaPaperPlane className="text-green-600 animate__backInRight  animate__animated" />
               </span>
             </h1>
             <h2 className="text-2xl font-bold mb-6">Feedback Form</h2>

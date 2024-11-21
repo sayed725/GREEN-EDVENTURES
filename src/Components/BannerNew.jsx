@@ -27,14 +27,14 @@ const BannerNew = () => {
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/carousel pic1.webp')`,
             }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="animate__animated animate__slideInDown text-4xl md:text-6xl font-bold mb-4">
               Explore Majestic Forests
             </h1>
-            <p className="text-lg md:text-xl mb-6 hidden sm:block">
+            <p className="text-lg md:text-xl mb-6 hidden sm:block  animate__slideInUp animate__animated">
               Venture deep into lush, pristine forests, uncovering their secrets
               and beauty while ensuring environmental sustainability.
             </p>
-            <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">
+            <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md ">
               Explore Now
             </a>
           </div>
@@ -48,10 +48,10 @@ const BannerNew = () => {
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/carosel pic 3.jpg')`,
             }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__slideInDown ">
               Discover Hidden Paradises
             </h1>
-            <p className="text-lg md:text-xl mb-6 hidden sm:block">
+            <p className="text-lg md:text-xl mb-6 hidden sm:block  animate__slideInUp animate__animated">
               Immerse yourself in the beauty of untouched nature and connect
               with the wild in the most sustainable way.
             </p>
@@ -69,10 +69,10 @@ const BannerNew = () => {
             }}
           >
             
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__slideInDown">
             Discover the Heart of the Jungle
             </h1>
-            <p className="text-lg md:text-xl mb-6 hidden sm:block">
+            <p className="text-lg md:text-xl mb-6 hidden sm:block  animate__slideInUp animate__animated">
             Dive into the vibrant wilderness of lush jungles, teeming with life and secrets, while championing efforts to protect their fragile ecosystems.
             </p>
             <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">
@@ -88,10 +88,10 @@ const BannerNew = () => {
 
             }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__slideInDown">
             Wander Through Enchanted Woods
             </h1>
-            <p className="text-lg md:text-xl mb-6 hidden sm:block">
+            <p className="text-lg md:text-xl mb-6 hidden sm:block animate__slideInUp animate__animated">
             Step into ancient forests filled with towering trees, hidden wildlife, and the serene whispers of nature, preserving these wonders for generations to come.
             </p>
             <a href="#1234" className="bg-green-700 hover:bg-green-600 hover:text-black  font-semibold px-6 py-3 rounded-md">

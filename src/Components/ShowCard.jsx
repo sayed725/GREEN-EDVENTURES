@@ -10,8 +10,8 @@ const ShowCard = () => {
     return (
         <div>
            <div className='flex flex-col gap-5'>    
-           <p className='text-sm text-center'>Explore Iconic Destinations</p>
-           <h2 className='text-4xl text-center font-semibold'>Discover The Forest of Bangladesh</h2>
+           <p className='text-sm text-center animate__slideInRight animate__animated'>Explore Iconic Destinations</p>
+           <h2 className='animate__animated animate__slideInLeft text-4xl text-center font-semibold'>Discover The Forest of Bangladesh</h2>
            </div>
            {/* card section starts  */}
 

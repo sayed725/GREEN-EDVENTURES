@@ -4,7 +4,7 @@ import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import Loading from './Loading';
+
 
 
 const UpdateProfile = () => {
@@ -64,7 +64,7 @@ const UpdateProfile = () => {
                 <Navbar></Navbar>
             </header>
            <main className='min-h-screen'>
-           <h2 className="text-4xl my-10 text-center text-green-600  font-semibold">Update Your Profile</h2>
+           <h2 className="text-4xl my-10 text-center text-green-600  font-semibold animate__slideInLeft animate__animated">Update Your Profile</h2>
                 <form onSubmit={handleProfile}  className=" md:w-3/4 lg:w-1/3 mx-auto">
                     <div className="form-control">
                         <label className="label">

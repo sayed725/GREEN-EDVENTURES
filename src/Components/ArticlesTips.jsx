@@ -32,10 +32,10 @@ const ArticlesTips = () => {
   return (
     <section className="py-16 bg-gradient-to-r from-[#184E68] to-[#57CA85]">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="mt-2 text-lg text-white text-center">
+        <p className="mb-2 text-sm text-white text-center">
           Explore some of the best tips from around the world
         </p>
-        <h2 className="text-3xl font-extrabold text-white text-center">
+        <h2 className="text-3xl font-extrabold text-white text-center animate__headShake animate__animated">
           Articles & Tips
         </h2>
 

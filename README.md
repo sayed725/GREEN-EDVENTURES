@@ -5,9 +5,9 @@ Welcome to this project.Discover the thrill of eco-friendly travel with Eco-Edve
 
 ### Live link to the deployed project
 
-- Private Github Repo Link:  [https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-sayed725)
+- Private Github Repo Link:  [https://github.com/programming-hero-web-course1/b10-a9-authentication-sayed725)
 
-- live link:   [https://a8-gadget-heaven-725.netlify.app/) 
+- live link:   [https://assingment-10-5294b.web.app/) 
 
 - Required PDF Link:   [https://drive.google.com/file/d/1EBQPTljIKRJS_NKkdsO8D9YbkY1FNGEx/view?usp=sharing) 
 

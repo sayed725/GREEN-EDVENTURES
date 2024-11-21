@@ -3,7 +3,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
 import { Link, useLocation } from 'react-router-dom';
-import { TypeAnimation } from 'react-type-animation';
+
 
 const UserProfile = () => {
 
@@ -32,7 +32,7 @@ const UserProfile = () => {
        
         <div className="text-center">
           <div className="text-3xl font-bold text-blue-700 flex justify-center items-center space-x-2">
-            <span className='text-green-600'>Welcome <br />{user && user.displayName}</span>
+            <span className='text-green-600 animate__slideInRight animate__animated'>Welcome <br />{user && user.displayName}</span>
           </div>
         </div>
         {/* Profile Image */}
@@ -47,7 +47,7 @@ const UserProfile = () => {
         </div>
         {/* User Information */}
         <div className="mt-4 text-center flex flex-col gap-3">
-          <h2 className="text-3xl font-semibold text-green-600">{user && user.displayName}</h2>
+          <h2 className="text-3xl font-semibold text-green-600 animate__slideInLeft animate__animated">{user && user.displayName}</h2>
           <p className="text-green-600">{user && user?.email}</p>
         </div>
         {/* Update Button */}

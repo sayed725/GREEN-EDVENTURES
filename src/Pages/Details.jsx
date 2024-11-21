@@ -17,6 +17,15 @@ const Details = () => {
   const { id } = useParams();
   const data = useLoaderData();
 
+
+  useEffect(()=>{
+
+    if(location.pathname == `/details/${id}`){
+        document.title = "Place Details-GreenEdventures"
+    }
+},[])
+
+
   const {
     AdventureTitle,
     Image,
@@ -259,7 +268,7 @@ const Details = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black"
+            className="w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black animate__animated animate__bounce animate__repeat-2 "
           >
             Book This Tour
           </button>
@@ -295,7 +304,7 @@ const Details = () => {
         <p className="text-green-600 flex gap-4 items-center "> <FaPhoneAlt></FaPhoneAlt> <span>+8801900000000</span> </p>
        <button
           onClick={handleTalkWithExpert}
-          className="w-full btn text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black"
+          className="w-full btn text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black animate__shakeX animate__animated animate__repeat-2"
         >
           Talk with Expert
         </button>

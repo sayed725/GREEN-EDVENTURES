@@ -1,6 +1,6 @@
 import React from 'react';
 import { LuBedDouble } from "react-icons/lu";
-import { FaHotel, FaUtensils, FaCar, FaWallet, FaCompass, FaGlobe } from "react-icons/fa";
+import { FaUtensils, FaCar, FaWallet, FaCompass, FaGlobe } from "react-icons/fa";
 
 const Feature = () => {
     return (

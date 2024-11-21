@@ -5,11 +5,11 @@ const ContactSection = () => {
   return (
     <div className="bg-gray-50 py-10">
 
-        <h2 className="text-4xl font-semibold text-center pb-10">Contact Us</h2>
+        <h2 className="text-4xl font-semibold text-center pb-10 animate__flash animate__animated">Contact Us</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Call Us Card */}
         <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6">
-          <div className="bg-teal-100 text-teal-500 p-4 rounded-full mb-4">
+          <div className="bg-teal-100 text-teal-500 p-4 rounded-full mb-4 animate__shakeX animate__animated">
             <FiPhone size={24} />
           </div>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">CALL US ON</h3>
@@ -19,7 +19,7 @@ const ContactSection = () => {
 
         {/* Email Us Card */}
         <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6">
-          <div className="bg-teal-100 text-teal-500 p-4 rounded-full mb-4">
+          <div className="bg-teal-100 text-teal-500 p-4 rounded-full mb-4 animate__shakeX animate__animated">
             <FiMail size={24} />
           </div>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">EMAIL US AT</h3>
@@ -28,8 +28,8 @@ const ContactSection = () => {
         </div>
 
         {/* Location Card */}
-        <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6">
-          <div className="bg-teal-100 text-teal-500 p-4 rounded-full mb-4">
+        <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 ">
+          <div className="bg-teal-100 text-teal-500 p-4 rounded-full mb-4 animate__shakeX animate__animated">
             <FiMapPin size={24} />
           </div>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">LOCATION</h3>
