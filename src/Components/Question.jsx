@@ -83,7 +83,7 @@ const Question = () => {
       </div>
       {/* feed back form  */}
       <div className="w-full">
-        <div className=" bg-[#0f2d3c] text-white py-[50px] rounded-md">
+        <div className=" bg-[#0f2d3c] text-white py-[100px] rounded-md">
           <div className=" w-full px-6 flex flex-col gap-10">
             <h1 className="text-3xl font-bold mb-4">
               <span className="flex items-center gap-2">

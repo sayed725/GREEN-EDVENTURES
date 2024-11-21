@@ -6,7 +6,16 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 const Login = () => {
+    const [inputEmail, setInputEmail] = useState("");
 
+
+    const handleForgotPassword = () => {
+        setForgetEmail(inputEmail);
+        // Redirect to Forgot Password page
+        navigate("/forgetpassword");
+        // Redirect to Forget Password page with email in query params
+      };
+    
 
 
   
@@ -78,7 +87,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text text-green-600">Email address</span>
                         </label>
-                        <input type="email" required name="email" placeholder="Email" className="input input-bordered"  onChange={(e) => setForgetEmail(e.target.value)}/>
+                        <input type="email" required name="email" placeholder="Email" className="input input-bordered"  onChange={(e) => setInputEmail(e.target.value)}/>
                     </div>
                     <div className="form-control relative">
                         <label className="label">
@@ -100,7 +109,7 @@ const Login = () => {
                     </span> 
                      
                         <label className="label">
-                            < Link to="/forgetpassword" className="label-text-alt link link-hover text-green-600">Forgot password?</Link>
+                            < Link onClick={handleForgotPassword} className="label-text-alt link link-hover text-green-600">Forgot password?</Link>
                         </label>
                     </div>
                     <div className="form-control mt-6">

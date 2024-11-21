@@ -1,32 +1,16 @@
-import React, { useContext, useEffect, useState  } from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
+import { toast, ToastContainer } from 'react-toastify';
+
 
 
 const ForgetPassword = () => {
 
-    
+    const { forgetEmail, setForgetEmail, forgetPassword } = useContext(AuthContext)
 
-
-    // const [inputValue, setInputValue] = useState(forgetEmail);
-
-//   // Update state when input value changes
-//   const handleInputChange = (e) => {
-//     setInputValue(e.target.value);
-//   };
-
- 
-  const { forgetEmail, setForgetEmail } = useContext(AuthContext)
-
-//   const handleInputChange = (e) => {
-// setForgetEmail({ ...forgetEmail, email: e.target.value }); // Update context state
-//   };
-
-   
-
-
-    // const handleResetPassword = () => {
+ // const handleResetPassword = () => {
     //     window.location.href = 'https://mail.google.com';
     //   };
   
@@ -35,8 +19,22 @@ const ForgetPassword = () => {
     const handleForm = (e)=>{
         e.preventDefault()
 
-      
-    }
+        const email = e.target.email.value 
+
+
+        forgetPassword(email)
+        .then(() => {
+        toast.success("Password Reset Email Send")
+        window.open("https://mail.google.com", "_blank");
+          })
+
+          .catch((error) => {
+             toast.error(`${error.code}`)
+        
+          });
+
+
+       }
 
 
     return (
@@ -51,7 +49,8 @@ const ForgetPassword = () => {
                     <label className="label">
                         <span className="label-text text-green-600">Your Email</span>
                     </label>
-                    <input type="Email" required name="email" placeholder="Email" className="input input-bordered"  value={forgetEmail}  />
+                    <input type="Email" required name="email" placeholder="Email" className="input input-bordered"  value={forgetEmail}
+        onChange={(e) => setForgetEmail(e.target.value)} />
                 </div>
                
                 <div className="form-control mt-6">
