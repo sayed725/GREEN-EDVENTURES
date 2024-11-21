@@ -1,14 +1,19 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const AuthLayout = () => {
     return (
-        <div className='w-11/12 mx-auto bg-base-200'>
+        <div className='w-11/12 mx-auto'>
             <header className='py-3'>
                 <Navbar></Navbar>
             </header>
-            <Outlet></Outlet>
+           <main className='min-h-screen'> 
+            <Outlet></Outlet></main>
+            <footer>
+                <Footer></Footer>
+            </footer>
         </div>
     );
 };

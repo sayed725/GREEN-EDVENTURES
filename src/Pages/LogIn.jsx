@@ -108,12 +108,11 @@ const Login = () => {
                     </div>
                 </form>
 
-
-               
+             
                <div className='md:w-3/4 lg:w-1/3 mx-auto mt-5'>
                <button onClick={handleGoogleSignIn}
                 className="w-full btn rounded-md text-white bg-gradient-to-r from-[#184E68] to-[#57CA85] hover:text-black">
-                    <FaGoogle></FaGoogle>
+                    <FaGoogle ></FaGoogle>
                     Log In with Google
                 </button>
                </div>

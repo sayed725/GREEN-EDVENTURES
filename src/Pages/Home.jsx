@@ -29,13 +29,13 @@ const Home = () => {
           <main>
          <div className='main-section'>
          <Banner></Banner>
-         <div className='py-[50px] border-2 border-red-700'>
+         <div className='py-5 sm:py-[50px] '>
          <Feature></Feature>
          </div>
-         <div className='py-[50px] border-2 border-red-700'>
+         <div className='lg:py-[50px] '>
            <Outlet></Outlet>
          </div>
-         <div className='py-[50px] border-2 border-red-700'>
+         <div className='py-[50px]'>
             <Question></Question>
          </div>
          </div>

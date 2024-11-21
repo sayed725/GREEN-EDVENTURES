@@ -14,6 +14,7 @@ import UserProfile from "./Pages/UserProfile";
 import UpdateProfile from "./Pages/UpdateProfile";
 import Error from "./Pages/Error";
 import ForgetPassword from "./Pages/ForgetPassword";
+import PrivateRoute from "./Pages/PrivateRoute";
 
 const routes = createBrowserRouter([
     {
@@ -56,16 +57,16 @@ const routes = createBrowserRouter([
        },
        {
         path: "/details/:id",
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: ()=> fetch ('/tours.json'),
        },
        {
         path: "/userprofile",
-        element: <UserProfile></UserProfile>,
+        element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>,
        },
        {
         path: "/updateprofile",
-        element: <UpdateProfile></UpdateProfile>,
+        element: <PrivateRoute> <UpdateProfile></UpdateProfile></PrivateRoute>,
        },
        {
         path: "/forgetpassword",

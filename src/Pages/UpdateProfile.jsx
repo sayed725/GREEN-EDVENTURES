@@ -4,9 +4,25 @@ import Footer from '../Components/Footer';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import Loading from './Loading';
 
 
 const UpdateProfile = () => {
+
+    const { user , setUser, updateUserProfile , loading }  = useContext(AuthContext)
+    const navigate = useNavigate()
+
+    // if(loading){
+    //     return <Loading></Loading>
+    // }
+
+    // if (!user && user?.email){
+    //    return navigate('/auth/login')
+    // }
+
+
+
+
 
     const location = useLocation()
    
@@ -18,9 +34,9 @@ const UpdateProfile = () => {
         }
     },[])
 
-    const navigate = useNavigate()
+   
 
-    const { user , setUser, updateUserProfile }  = useContext(AuthContext)
+   
 
     const handleProfile = (e)=>{
         e.preventDefault()
@@ -32,13 +48,13 @@ const UpdateProfile = () => {
 
         updateUserProfile({displayName:name, photoURL:photo})
         .then((result)=>{
-            console.log(result)
+            // console.log(result)
             toast.success('Your Profile has been updated Successfully')
             navigate('/userprofile')
 
         })
         .catch(error=>{
-            console.log(error)
+            // console.log(error)
         })
     }
 
@@ -47,7 +63,7 @@ const UpdateProfile = () => {
             <header>
                 <Navbar></Navbar>
             </header>
-           <main>
+           <main className='min-h-screen'>
            <h2 className="text-4xl my-10 text-center text-green-600  font-semibold">Update Your Profile</h2>
                 <form onSubmit={handleProfile}  className=" md:w-3/4 lg:w-1/3 mx-auto">
                     <div className="form-control">

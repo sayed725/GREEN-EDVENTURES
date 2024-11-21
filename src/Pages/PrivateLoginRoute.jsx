@@ -4,8 +4,7 @@ import { Navigate } from "react-router-dom";
 import Loading from "./Loading";
 
 
-const PrivateRoute = ({children}) => {
-
+const PrivateLoginRoute = ({children}) => {
     const { user, loading }= useContext(AuthContext)
 
     if(loading){
@@ -22,4 +21,4 @@ const PrivateRoute = ({children}) => {
     );
 };
 
-export default PrivateRoute;
+export default PrivateLoginRoute;

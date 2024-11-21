@@ -39,7 +39,7 @@ const Details = () => {
     setPlace(singleData);
   }, []);
 
-  console.log(place);
+  
 
 
   const handleBookingForm = (e)=>{

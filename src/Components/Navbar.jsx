@@ -2,19 +2,28 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 
+
+
+
 const Navbar = () => {
 
-  const { name, user , logOut } = useContext(AuthContext)
+  const {  user , logOut } = useContext(AuthContext)
+  
 
 
 
     const links = <>
-     <li><NavLink to='/'>Home</NavLink></li>
-     <li><NavLink to='/about'>About Us</NavLink></li>
-     <li><NavLink to='/blog'>Blog</NavLink></li>
+     <li><NavLink className={({ isActive }) =>
+            ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/'>Home</NavLink></li>
+     <li><NavLink className={({ isActive }) =>
+            ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/about'>About Us</NavLink></li>
+     <li><NavLink className={({ isActive }) =>
+            ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/blog'>Blog</NavLink></li>
 
-     <li><NavLink to='/userprofile'>My Profile</NavLink></li>
-     <li><NavLink to='/updateprofile'>UpdateProfile</NavLink></li>
+     <li><NavLink className={({ isActive }) =>
+            ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/userprofile'>My Profile</NavLink></li>
+     <li><NavLink className={({ isActive }) =>
+            ` ${isActive ? "tab-active  text-green-600 underline" : "" }`} to='/updateprofile'>UpdateProfile</NavLink></li>
 
     </>
 
@@ -59,13 +68,7 @@ const Navbar = () => {
         <div className="login flex gap-2 items-center">
           <div className=" ">
           {user && user?.email && user?.photoURL ? (
-            // <div className="flex gap-2 relative">
-            //   <img className="w-[60px] rounded-full" src={user?.photoURL} alt="" />
-
-            //   <div className="absolute top-2 left-12 text-black text-sm font-medium py-1 px-2 rounded shadow-lg opacity-0 hover:opacity-100 transition-opacity duration-200">
-            //   {user.displayName}
-            //   </div>
-            // </div>
+            
 
             <div className="relative group flex items-center">
      
@@ -92,7 +95,7 @@ const Navbar = () => {
 
 
            <div>
-             <button onClick={logOut} className="btn rounded-md border-none  text-white  bg-green-600 hover:text-black hover:bg-green-700">Log-out</button>  
+             <button onClick={logOut} className="btn rounded-md border-none  text-white  bg-green-700 hover:text-black hover:bg-green-600">Log-out</button>  
            </div>
 
 

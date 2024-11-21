@@ -5,8 +5,8 @@ import { SiAzuredataexplorer } from "react-icons/si";
 
 const Question = () => {
   return (
-    <div className="grid grid-cols-5 gap-8">
-      <div className="col-span-2">
+    <div className="flex justify-between flex-col lg:flex-row gap-8">
+      <div className="flex flex-col ">
         <div className="flex flex-col">
           {/* Heading Section */}
           <div className="flex flex-col gap-5">
@@ -34,9 +34,7 @@ const Question = () => {
                   1. Talk To Us
                 </h3>
                 <p className="text-gray-600 mt-2 leading-relaxed">
-                  Feugiat pretium nibh ipsum consequat nisl vel pretium lectus
-                  quam. Aliquam ut porttitor leo a diam sollicitudin. Nam at
-                  lectus urna duis convallis.
+                Got questions or need expert advice? Our team is here to help you plan the perfect eco-friendly adventure tailored to your needs. Contact us today and start your sustainable travel journey!
                 </p>
               </div>
             </div>
@@ -44,7 +42,7 @@ const Question = () => {
 
           <div className="mt-12 flex flex-col items-start gap-6 md:gap-8 w-full max-w-4xl">
             {/* Single Service */}
-            <div className="flex flex-col md:flex-row items-start gap-4 md:items-center">
+            <div className="flex flex-col md:flex-row gap-4 md:items-center">
               {/* Icon */}
               <div className="flex-shrink-0">
                 <MdOutlineTravelExplore className="text-4xl text-green-600" />
@@ -56,9 +54,7 @@ const Question = () => {
                   2. Find Best Destination
                 </h3>
                 <p className="text-gray-600 mt-2 leading-relaxed">
-                  Feugiat pretium nibh ipsum consequat nisl vel pretium lectus
-                  quam. Aliquam ut porttitor leo a diam sollicitudin. Nam at
-                  lectus urna duis convallis.
+                Discover the perfect eco-friendly getaway tailored to your interests and passions. From serene mountain treks to vibrant ocean dives, explore sustainable travel options that align with your values. Let us guide you to unforgettable, green adventures!
                 </p>
               </div>
             </div>
@@ -78,9 +74,7 @@ const Question = () => {
                   3. Explore The Globe
                 </h3>
                 <p className="text-gray-600 mt-2 leading-relaxed">
-                  Feugiat pretium nibh ipsum consequat nisl vel pretium lectus
-                  quam. Aliquam ut porttitor leo a diam sollicitudin. Nam at
-                  lectus urna duis convallis.
+                Embark on a journey to uncover the world’s most stunning eco-friendly destinations. Experience diverse cultures, breathtaking landscapes, and sustainable adventures that leave a positive impact. Start your global exploration today!
                 </p>
               </div>
             </div>
@@ -88,12 +82,12 @@ const Question = () => {
         </div>
       </div>
       {/* feed back form  */}
-      <div className="col-span-3">
-        <div className=" bg-slate-400 text-white py-[50px] rounded-md">
+      <div className="w-full">
+        <div className=" bg-[#0f2d3c] text-white py-[50px] rounded-md">
           <div className=" w-full px-6 flex flex-col gap-10">
             <h1 className="text-3xl font-bold mb-4">
               <span className="flex items-center gap-2">
-                Speak With Us <FaPaperPlane className="text-yellow-500" />
+                Speak With Us <FaPaperPlane className="text-green-600" />
               </span>
             </h1>
             <h2 className="text-2xl font-bold mb-6">Feedback Form</h2>
@@ -166,7 +160,7 @@ const Question = () => {
             </form>
             <button
               type="submit"
-              className="w-full bg-yellow-500 text-indigo-900 font-bold py-2 px-4 rounded hover:bg-yellow-600 transition mt-10"
+              className="w-full bg-yellow-500  font-bold py-2 px-4 rounded hover:bg-yellow-600 transition mt-10 text-white bg-gradient-to-r from-[#184E68] to-[#57CA85]  hover:text-black"
             >
               SUBMIT NOW
             </button>
