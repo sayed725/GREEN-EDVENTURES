@@ -59,8 +59,8 @@ Welcome to this project.Discover the thrill of eco-friendly travel with Eco-Edve
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sayed725/MovieLify-main-Client.git
-   cd MovieLify-main-Client
+   git clone https://github.com/sayed725/GREEN-EDVENTURES.git
+   cd GREEN-EDVENTURES
    ```
 
 2. Install dependencies:
@@ -80,7 +80,7 @@ Welcome to this project.Discover the thrill of eco-friendly travel with Eco-Edve
    VITE_appId=your_firebase_appId
 
    VITE_API_URL=your_server_api_link
-   VITE_STRIPE_PUBLIC_KEY=your_stripe_Publishable_Key
+   
    ```
 
 4. Run the development server:
@@ -91,45 +91,6 @@ Welcome to this project.Discover the thrill of eco-friendly travel with Eco-Edve
 
 5. Open [http://localhost:5173/](http://localhost:5173/) in your browser.
 
-### Server Setup
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/sayed725/MovieLify-Server.git
-   cd MovieLify-Server
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Set up the environment variables in a `.env` file:
-   ```env
-   DB_USER=your_db_user_name
-   DB_PASS=your_db_user_password
-   JWT_SECRET=jwt_secret_code
-   STRIPE_SECRET_KEY=your_stripe_Secret _Key
-   ```
-4. Run the development server:
-   ```bash
-   npm start
-   ```
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
